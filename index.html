@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>My Preso</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="one/01_slide/1">
+<h1><code>/app</code> vs. <code>/lib</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/2">
+<h1>What's in <code>/app</code> ?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/3">
+<h2>What's in <code>/app</code> ?</h2>
+
+<h1>assets</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/4">
+<h2>What's in <code>/app</code> ?</h2>
+
+<h1>controllers</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/5">
+<h2>What's in <code>/app</code> ?</h2>
+
+<h1>helpers</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/6">
+<h2>What's in <code>/app</code> ?</h2>
+
+<h1>mailers</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/7">
+<h2>What's in <code>/app</code> ?</h2>
+
+<h1>models</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/8">
+<h2>What's in <code>/app</code> ?</h2>
+
+<h1>views</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/9">
+<h2>What's in <code>/app</code> ?</h2>
+
+<h1>validators</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/10">
+<h1>What's in <code>/lib</code> ?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/11">
+<h2>What's in <code>/lib</code> ?</h2>
+
+<h1>assets</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/12">
+<h2>What's in <code>/lib</code> ?</h2>
+
+<h1>tasks</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/13">
+<h1>What else do people</h1>
+
+<h1>dump in <code>/lib</code> ?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/14">
+<h2>What else do people dump in <code>/lib</code> ?</h2>
+
+<h1>jobs</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/15">
+<h2>What else do people dump in <code>/lib</code> ?</h2>
+
+<h1>services</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/16">
+<h2>What else do people dump in <code>/lib</code> ?</h2>
+
+<h1>middleware</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/17">
+<h2>What else do people dump in <code>/lib</code> ?</h2>
+
+<h1>analytics</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/18">
+<h2>What else do people dump in <code>/lib</code> ?</h2>
+
+<h1>basically:</h1>
+
+<ul>
+<li><code>!model</code></li>
+<li><code>!controller</code></li>
+<li><code>!view</code></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/19">
+<h1>But why are we doing this?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/20">
+<h1>Keep Application Logic</h1>
+
+<h1>Where it Belongs!</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/21">
+<h1>In <code>/app</code>!!!</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/22">
+<h1>Rules of Thumb</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/23">
+<h2>Rules of Thumb</h2>
+
+<h1>All Bussiness logic</h1>
+
+<h1>Belongs in <code>/app</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/24">
+<h2>Rules of Thumb</h2>
+
+<h1>So <code>jobs</code>,</h1>
+
+<h1><code>services</code>,</h1>
+
+<h1><code>middleware</code>, etc</h1>
+
+<h1>should be in <code>/app</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/25">
+<h2>Rules of Thumb</h2>
+
+<h1>Core extensions</h1>
+
+<h1>should be in <code>/lib</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/26">
+<h2>Rule of Thumb</h2>
+
+<h1>Eventual Gems</h1>
+
+<h1>should be in <code>/lib</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/27">
+<h1>What about Tasks?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/28">
+<h1>Convention has it expected</h1>
+
+<h1>under <code>/lib</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/29">
+<h2>Rule of Thumb</h2>
+
+<h1>Follow Convention ...</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/30">
+<h2>Rule of Thumb</h2>
+
+<h1>... but have the heavy</h1>
+
+<h1>lifting done in classes</h1>
+
+<h1>under <code>/app</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/31">
+<h1>Previously you needed</h1>
+
+<h1>to configure the load</h1>
+
+<h1>path to bring directories</h1>
+
+<h1>in <code>/app</code></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/32">
+<h1>You get it for free</h1>
+
+<h1>in Rails 3</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/33">
+<h1>BONUS DEBATE!</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/34">
+<h1>Is it pronounced</h1>
+
+<h1>"lib" or "l-eye-b"</h1>
+</div>
+</div></div>
+
+</body>
+</html>
